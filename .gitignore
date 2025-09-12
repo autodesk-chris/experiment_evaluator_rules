@@ -7,8 +7,8 @@
 ehthumbs.db
 Thumbs.db
 
-# Cursor
-.cursor/
+# Cursor (allow rules directory)
+.cursor/*
 !.cursor/rules/
 
 # Logs
