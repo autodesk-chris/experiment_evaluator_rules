@@ -1,0 +1,62 @@
+# Sample Experiment Brief
+
+## Outcome
+Increase user engagement with onboarding content to improve feature adoption and long-term user retention.
+
+## Trunk Problem
+New users struggle to understand the value and functionality of key product features after initial signup.
+
+## Branch Problem
+Users who complete basic onboarding often don't revisit training materials when they encounter advanced features later in their journey.
+
+## Root Cause
+Users abandon advanced features because they lack easy access to contextual help when they need it most.
+
+## Supporting Data
+• 65% of users complete initial onboarding but only 12% engage with advanced features within 30 days
+• User interviews reveal 78% want "just-in-time" help rather than upfront training
+• Support tickets show 40% of questions are about features covered in onboarding
+• Heat map data shows users spend <2 minutes on help documentation pages
+
+## Hypothesis
+We believe that providing persistent, contextual access to onboarding content will increase feature engagement because users prefer just-in-time learning over comprehensive upfront training.
+
+## Prediction
+If we provide persistent access to onboarding content through a visible CTA, then users will engage more with advanced features and require less support.
+
+## Test Title
+Persistent Onboarding Access Test
+
+## Short Description
+Test the impact of a persistent "View Onboarding" CTA on user engagement with advanced features.
+
+## Test Learning Objective
+Does persistent access to self-serve onboarding content increase the likelihood of a user engaging with key functionality and workflows?
+
+## Test Type
+A/B Test
+
+## Test Variant Description
+Variant users receive the onboarding training as per the current flow, then see a persistent and highly visible 'view onboarding' CTA, wherever they are working. Users should be able to access without necessarily clicking into another menu. Possible in-product survey to users that don't click CTA to understand why.
+
+## Control Variant Description
+Control users experience the current onboarding flow with no additional access points to training materials after initial completion.
+
+## Audience
+New users who have completed basic onboarding within the last 30 days, randomly split 50/50 between control and variant groups.
+
+## Duration
+4 weeks to capture sufficient user interactions and account for typical feature discovery patterns, based on historical data showing peak feature exploration occurs within 30 days.
+
+## Success Criteria
+Test succeeds if variant group shows >20% lift in advanced feature engagement compared to control group, with statistical significance (p<0.05).
+
+## Data Requirements
+Training revisits, workflow and feature usage, click through rate on CTA to be measured. Review data based on 7 days cohorts. Possible in-product survey to targeting users that don't click CTA to understand why they didn't click. This would have to be shared at least 7 days after (consider timing and effect on experiment results).
+
+## Considerations and investigation requirements
+Consider whether we do an in-product survey to get qualitative info on why users may not have clicked CTA.
+
+## What next
+Test succeeds: Roll out to all users
+Test fails: Run follow-up test based on understanding why test failed eg. didn't see CTA, didn't see the value, saw it but content not compelling.
