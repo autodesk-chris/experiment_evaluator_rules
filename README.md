@@ -21,22 +21,22 @@ Transform your experiment evaluation process using Cursor's AI-powered rules eng
 
 ## 📋 What Gets Evaluated
 
-### Problem Space (62 points)
-- Outcome (4 pts)
-- Trunk Problem (4 pts)
-- Branch Problem (4 pts)
+### Problem Space (56 points)
+- Outcome (2 pts)
+- Trunk Problem (2 pts)
+- Branch Problem (2 pts)
 - Root Cause (20 pts)
 - Supporting Data (10 pts)
 - Hypothesis (20 pts)
 
-### Solution Space (28 points)
+### Solution Space (34 points)
 - Prediction (10 pts)
 - Learning Objective (2 pts)
 - Test Variant (2 pts)
 - Control Variant (2 pts)
 - Audience (2 pts)
 - Duration (2 pts)
-- Success Criteria (2 pts)
+- Success Criteria (8 pts)
 - Data Requirements (2 pts)
 - Considerations (2 pts)
 - What Next (2 pts)
@@ -56,6 +56,15 @@ The Cursor Rules system uses AI to:
 2. Apply scoring criteria for each section
 3. Provide detailed feedback with recommendations
 4. Calculate overall score and color rating
+
+### Important scoring rules
+- Total possible score: 90 points (Problem Space 56 + Solution Space 34)
+- Binary checks (Outcome, Trunk Problem, Branch Problem): 0 or full points only
+- Success Criteria: graded on an 8-point rubric; if no quantitative values are provided for metrics, the maximum score is capped at 2/8
+
+### Tips
+- When asking the AI to evaluate, include the phrase: "Use the workspace evaluation rules"
+- Keep your brief structured by the 16 sections for best results
 
 ---
 
