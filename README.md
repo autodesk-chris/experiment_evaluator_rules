@@ -15,19 +15,19 @@ Transform your experiment evaluation process using Cursor's AI-powered rules eng
 - Ask: "Please evaluate this experiment using the evaluation rules"
 
 ### 3. Get Instant Feedback
-- Receive detailed scoring (out of 70 points)
+- Receive detailed scoring (out of 90 points)
 - Get color-coded results (Green/Orange/Red)
 - See specific recommendations for improvement
 
 ## 📋 What Gets Evaluated
 
-### Problem Space (42 points)
+### Problem Space (62 points)
 - Outcome (4 pts)
 - Trunk Problem (4 pts)
 - Branch Problem (4 pts)
-- Root Cause (10 pts)
+- Root Cause (20 pts)
 - Supporting Data (10 pts)
-- Hypothesis (10 pts)
+- Hypothesis (20 pts)
 
 ### Solution Space (28 points)
 - Prediction (10 pts)

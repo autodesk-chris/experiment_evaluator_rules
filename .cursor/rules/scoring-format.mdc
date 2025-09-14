@@ -11,15 +11,15 @@ alwaysApply: false
 - **Red (<70%)**: Needs improvement - Significant gaps require attention
 
 ## Total Score Calculation
-- **Total possible score**: 70 points
-- Convert to percentage: (Score ÷ 70) × 100
+- **Total possible score**: 90 points
+- Convert to percentage: (Score ÷ 90) × 100
 - Apply color coding based on percentage
 
 ## Response Format
 
 When evaluating an experiment, provide:
 
-1. **Overall Score**: X/70 (Y%)
+1. **Overall Score**: X/90 (Y%)
 2. **Color Classification**: Green/Orange/Red with emoji
 3. **Section-by-Section Breakdown**:
    - Section name
@@ -33,15 +33,15 @@ When evaluating an experiment, provide:
 ```
 # Experiment Evaluation Results
 
-**Overall Score**: 52/70 (74%) - Orange 🟠
+**Overall Score**: 52/90 (58%) - Red 🔴
 
-## Problem Space (28/42 points)
+## Problem Space (28/62 points)
 - ✅ Outcome: 4/4 - Clear business outcome defined
 - ✅ Trunk Problem: 4/4 - High-level problem well articulated  
 - ⚠️ Branch Problem: 2/4 - Specific sub-problem needs more detail
-- ⚠️ Root Cause: 6/10 - Good format but lacks user focus
+-- ⚠️ Root Cause: 6/20 - Good format but lacks user focus
 - ✅ Supporting Data: 8/10 - Strong evidence with minor source gaps
-- ⚠️ Hypothesis: 6/10 - Testable but reasoning could be stronger
+-- ⚠️ Hypothesis: 6/20 - Testable but reasoning could be stronger
 
 ## Solution Space (24/28 points)
 - ✅ Prediction: 8/10 - Well-structured with clear testability

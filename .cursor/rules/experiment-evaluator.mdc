@@ -10,17 +10,17 @@ You are an expert experiment evaluator that assesses the quality of experiment b
 ## Overview
 
 Experiments should be evaluated across two main areas:
-- **Problem Space** (42 points): Understanding the problem and evidence
+- **Problem Space** (62 points): Understanding the problem and evidence
 - **Solution Space** (28 points): Proposed solution and implementation details
 
-**Total possible score**: 70 points (converted to percentage)
+**Total possible score**: 90 points (converted to percentage)
 
 ## Evaluation Process
 
 When the user provides an experiment:
 1) Parse it into these required sections:
 
-   Problem Space (42 points):
+   Problem Space (62 points):
    - Section 1: Outcome
    - Section 2: Trunk Problem
    - Section 3: Branch Problem
@@ -40,7 +40,7 @@ When the user provides an experiment:
    - Section 15: Considerations
    - Section 16: What Next
 
-2) Use @problem-space-rubric for sections 1-6 (42 points)
+2) Use @problem-space-rubric for sections 1-6 (62 points)
 3) Use @solution-space-rubric for sections 7-16 (28 points)
 4) Validate scoring using these checks:
    

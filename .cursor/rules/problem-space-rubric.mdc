@@ -1,9 +1,9 @@
 ---
-description: Problem Space evaluation criteria (sections 1-6, 42 points total)
+description: Problem Space evaluation criteria (sections 1-6, 62 points total)
 alwaysApply: false
 ---
 
-# Problem Space Sections (42 points total)
+# Problem Space Sections (62 points total)
 
 ## 1. Outcome (4 points)
 **Binary Check**: DWas there content provided
@@ -20,29 +20,29 @@ alwaysApply: false
 - ✅ **4 points**: Content exists 
 - ❌ **0 points**: Content is missing
 
-## 4. Root Cause (10 points)
+## 4. Root Cause (20 points)
 **AI Evaluation** - Score across 4 criteria:
 
-**Length (1 point)**:
-- **1 point**: Statement is concise (1-2 sentences)
+**Length (2 points)**:
+- **2 points**: Statement is concise (1-2 sentences)
 - **0 points**: Ttoo long (3+ sentences)
 
-**Format (1 point)**:
-- **1 point**: Uses "[trunk problem] because [reason]" causal structure
+**Format (2 points)**:
+- **2 points**: Uses "[trunk problem] because [reason]" causal structure
 - **0 points**: No clear causal link
 
-**Focus (4 points)**:
-- **4 points**: Users are the subject, is clearly about an observable behavior, no features/workflows/solutions named
-- **3 points**: Mostly user-focused, but minor product/system references present
-- **2 points**: Mix of user challenge and product/system framing, partially in solution space
-- **1 point**: Primarily product/system focused with little user perspective
+**Focus (8 points)**:
+- **8 points**: Users are the subject, is clearly about an observable behavior, no features/workflows/solutions named
+- **6 points**: Mostly user-focused, but minor product/system references present
+- **4 points**: Mix of user challenge and product/system framing, partially in solution space
+- **2 points**: Primarily product/system focused with little user perspective
 - **0 points**: Purely product/system or solution-focused, no user challenge
 
-**Clarity (4 points)**:
-- **4 points**: Behavior is measurable in data/feedback and could be solved in 3+ ways
-- **3 points**: Measurable and open-ended, but phrasing could be sharper
-- **2 points**: Partly observable, with some assumptions about motivation/intent; multiple solutions possible but not obvious
-- **1 point**: Vague or unmeasurable, or implies a narrow set of solutions
+**Clarity (8 points)**:
+- **8 points**: Behavior is measurable in data/feedback and could be solved in 3+ ways
+- **6 points**: Measurable and open-ended, but phrasing could be sharper
+- **4 points**: Partly observable, with some assumptions about motivation/intent; multiple solutions possible but not obvious
+- **2 points**: Vague or unmeasurable, or implies a narrow set of solutions
 - **0 points**: Attitudinal, unmeasurable, and points to a single obvious fix
 
 **Operational Rules:**
@@ -73,29 +73,29 @@ alwaysApply: false
 - Clear data sources mentioned
 - Attribution is credible and verifiable
 
-## 6. Hypothesis (10 points)
+## 6. Hypothesis (20 points)
 **AI Evaluation** - Score across 4 criteria:
 
-**Belief Statement (2 points)**:
-- **2 points**: Clearly states core belief about problem/behavior, aligns with root cause, avoids solutions
-- **1 point**: States belief but weakly connects to root cause, or mixes in implied actions/solutions
+**Belief Statement (4 points)**:
+- **4 points**: Clearly states core belief about problem/behavior, aligns with root cause, avoids solutions
+- **2 points**: States belief but weakly connects to root cause, or mixes in implied actions/solutions
 - **0 points**: Describes action/feature/goal rather than belief; no connection to root cause, uses 'if'
 
-**Reason (2 points)**:
-- **2 points**: Provides rationale that logically follows from insights/evidence and connects to user behavior
-- **1 point**: Offers reason but vague, generic, or loosely related to problem
+**Reason (4 points)**:
+- **4 points**: Provides rationale that logically follows from insights/evidence and connects to user behavior
+- **2 points**: Offers reason but vague, generic, or loosely related to problem
 - **0 points**: No rationale or relies purely on speculation
 
-**Falsifiability (3 points)**:
-- **3 points**: Can be definitively validated or refuted with specific, measurable outcomes
-- **2 points**: Mostly testable, but contains ambiguous or subjective elements
-- **1 point**: Difficult to test or relies heavily on qualitative judgment
+**Falsifiability (6 points)**:
+- **6 points**: Can be definitively validated or refuted with specific, measurable outcomes
+- **4 points**: Mostly testable, but contains ambiguous or subjective elements
+- **2 points**: Difficult to test or relies heavily on qualitative judgment
 - **0 points**: Cannot be validated or falsified through measurement
 
-**Reflects supporting data (3 points)**:
-- **3 points**: Directly addresses root cause and is consistent with supporting data
-- **2 points**: Generally consistent with insights but overlooks key aspects
-- **1 point**: Weakly connected to insights, or potentially contradicts them
+**Reflects supporting data (6 points)**:
+- **6 points**: Directly addresses root cause and is consistent with supporting data
+- **4 points**: Generally consistent with insights but overlooks key aspects
+- **2 points**: Weakly connected to insights, or potentially contradicts them
 - **0 points**: No connection to root cause or ignores available evidence
 
 **Operational Rules:**
