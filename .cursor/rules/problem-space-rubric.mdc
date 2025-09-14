@@ -1,23 +1,23 @@
 ---
-description: Problem Space evaluation criteria (sections 1-6, 62 points total)
-alwaysApply: false
+description: Problem Space evaluation criteria (sections 1-6, 56 points total)
+alwaysApply: true
 ---
 
-# Problem Space Sections (62 points total)
+# Problem Space Sections (56 points total)
 
-## 1. Outcome (4 points)
-**Binary Check**: DWas there content provided
-- ✅ **4 points**: Content exists 
-- ❌ **0 points**: Content is missing
-
-## 2. Trunk Problem (4 points) 
+## 1. Outcome (2 points)
 **Binary Check**: Was there content provided
-- ✅ **4 points**: Content exists
+- ✅ **2 points**: Content exists 
 - ❌ **0 points**: Content is missing
 
-## 3. Branch Problem (4 points)
-**Binary Check**: Was thetre content provided
-- ✅ **4 points**: Content exists 
+## 2. Trunk Problem (2 points) 
+**Binary Check**: Was there content provided
+- ✅ **2 points**: Content exists
+- ❌ **0 points**: Content is missing
+
+## 3. Branch Problem (2 points)
+**Binary Check**: Was there content provided
+- ✅ **2 points**: Content exists 
 - ❌ **0 points**: Content is missing
 
 ## 4. Root Cause (20 points)

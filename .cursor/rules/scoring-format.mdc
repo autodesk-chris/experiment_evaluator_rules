@@ -1,6 +1,6 @@
 ---
 description: Response format and color coding for experiment evaluations
-alwaysApply: false
+alwaysApply: true
 ---
 
 # Scoring Format and Response Structure
@@ -35,7 +35,7 @@ When evaluating an experiment, provide:
 
 **Overall Score**: 52/90 (58%) - Red 🔴
 
-## Problem Space (28/62 points)
+## Problem Space (28/56 points)
 - ✅ Outcome: 4/4 - Clear business outcome defined
 - ✅ Trunk Problem: 4/4 - High-level problem well articulated  
 - ⚠️ Branch Problem: 2/4 - Specific sub-problem needs more detail
@@ -43,14 +43,14 @@ When evaluating an experiment, provide:
 - ✅ Supporting Data: 8/10 - Strong evidence with minor source gaps
 -- ⚠️ Hypothesis: 6/20 - Testable but reasoning could be stronger
 
-## Solution Space (24/28 points)
+## Solution Space (24/34 points)
 - ✅ Prediction: 8/10 - Well-structured with clear testability
 - ✅ Learning Objective: 2/2 - Excellent learning focus
 - ✅ Test Variant: 2/2 - Clear implementation details
 - ✅ Control Variant: 2/2 - Proper baseline established
 - ✅ Audience: 2/2 - Well-defined targeting
 - ⚠️ Duration: 1/2 - Duration stated but lacks rationale
-- ✅ Success Criteria: 2/2 - Clear quantitative thresholds
+- ✅ Success Criteria: 8/8 - Clear quantitative thresholds and stat sig or >10% lift
 - ✅ Data Requirements: 2/2 - Metrics align with criteria
 - ⚠️ Considerations: 1/2 - Some risks noted but incomplete
 - ✅ What Next: 2/2 - Clear success and failure paths

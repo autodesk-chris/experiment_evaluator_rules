@@ -1,9 +1,9 @@
 ---
-description: Solution Space evaluation criteria (sections 7-16, 28 points total)
-alwaysApply: false
+description: Solution Space evaluation criteria (sections 7-16, 34 points total)
+alwaysApply: true
 ---
 
-# Solution Space Sections (28 points total)
+# Solution Space Sections (34 points total)
 
 ## 7. Prediction (10 points)
 **AI Evaluation** - Score across 4 criteria:
@@ -72,11 +72,60 @@ alwaysApply: false
 - **1 point**: Duration stated but no rationale OR weak rationale
 - **0 points**: Missing, vague ("a few weeks"), or lacks justification
 
-## 13. Success Criteria (2 points)
-**AI Evaluation**:
-- **2 points**: Quantitative thresholds, statistical significance criteria, aligns with learning objective
-- **1 point**: Some specificity but missing elements or unclear measurement logic
-- **0 points**: No clear threshold, ambiguous criteria, or missing entirely
+## 13. Success Criteria (8 points)
+**AI Evaluation** — Use the following scoring bands:
+
+**8 points:**
+- Clear behavioral change expressed with EITHER:
+  - Statistical significance (95% confidence) with any lift
+  - OR clear quantitative threshold >10% lift
+- Direct alignment with learning objective
+- Focused set of metrics (≤4)
+- Each metric has clear measurement period
+- Clear distinction between primary and secondary metrics
+
+**6 points:**
+- Clear behavioral change expressed with EITHER:
+  - Statistical significance (95% confidence) with any lift
+  - OR clear quantitative threshold >10% lift
+- Somewhat aligned with learning objective
+- May have too many metrics (5-6)
+- Some metrics missing measurement periods
+- Primary/secondary metrics not clearly distinguished
+
+**4 points:**
+- Mix of qualitative and quantitative measures
+- No statistical significance OR threshold mentioned
+- Loose connection to learning objective
+- Too many metrics (>6)
+- Some metrics missing measurement periods
+- No clear distinction between primary/secondary metrics
+
+**2 points:**
+- No values for metrics defined OR
+- Mostly qualitative measures
+- Weak connection to learning objective
+- Metrics are unclear or unmeasurable
+- No measurement periods defined
+
+**0 points:**
+- No clear success criteria
+- No measurable outcomes
+- No connection to learning objective
+- No specific metrics defined
+- Success is completely ambiguous
+
+**Operational rules:**
+1) Success criteria must be specific and quantifiable (e.g., ">20% lift" or "p<0.05" or "conversion rate increases by 15%") to receive full points.
+2) Evidence must quote the success criteria section being evaluated.
+3) If the text is empty or missing, return score 0 with recommendation to add clear, quantitative success thresholds.
+4) Keep reasons concise and factual.
+5) Recommendations should:
+   - Suggest specific quantitative thresholds if missing
+   - Recommend statistical significance criteria if absent
+   - Ensure alignment with learning objective
+   - Replace vague terms with measurable benchmarks
+6) If no quantitative values are provided for the metrics, cap the maximum score for Success Criteria at 2 points.
 
 ## 14. Data Requirements (2 points)
 **AI Evaluation**:
