@@ -1,0 +1,77 @@
+---
+description: Response format and color coding for experiment evaluations
+alwaysApply: false
+---
+
+# Scoring Format and Response Structure
+
+## Color Coding Rules
+- **Green (80%+)**: Excellent - Strong experiment ready for implementation
+- **Orange (70-79%)**: Good - Solid experiment with minor improvements needed  
+- **Red (<70%)**: Needs improvement - Significant gaps require attention
+
+## Total Score Calculation
+- **Total possible score**: 70 points
+- Convert to percentage: (Score ÷ 70) × 100
+- Apply color coding based on percentage
+
+## Response Format
+
+When evaluating an experiment, provide:
+
+1. **Overall Score**: X/70 (Y%)
+2. **Color Classification**: Green/Orange/Red with emoji
+3. **Section-by-Section Breakdown**:
+   - Section name
+   - Score earned / Max possible
+   - Brief reasoning
+   - Specific recommendations for improvement
+4. **Summary**: Top 3 strengths and top 3 areas for improvement
+
+## Example Response Structure
+
+```
+# Experiment Evaluation Results
+
+**Overall Score**: 52/70 (74%) - Orange 🟠
+
+## Problem Space (28/42 points)
+- ✅ Outcome: 4/4 - Clear business outcome defined
+- ✅ Trunk Problem: 4/4 - High-level problem well articulated  
+- ⚠️ Branch Problem: 2/4 - Specific sub-problem needs more detail
+- ⚠️ Root Cause: 6/10 - Good format but lacks user focus
+- ✅ Supporting Data: 8/10 - Strong evidence with minor source gaps
+- ⚠️ Hypothesis: 6/10 - Testable but reasoning could be stronger
+
+## Solution Space (24/28 points)
+- ✅ Prediction: 8/10 - Well-structured with clear testability
+- ✅ Learning Objective: 2/2 - Excellent learning focus
+- ✅ Test Variant: 2/2 - Clear implementation details
+- ✅ Control Variant: 2/2 - Proper baseline established
+- ✅ Audience: 2/2 - Well-defined targeting
+- ⚠️ Duration: 1/2 - Duration stated but lacks rationale
+- ✅ Success Criteria: 2/2 - Clear quantitative thresholds
+- ✅ Data Requirements: 2/2 - Metrics align with criteria
+- ⚠️ Considerations: 1/2 - Some risks noted but incomplete
+- ✅ What Next: 2/2 - Clear success and failure paths
+
+## Top Recommendations
+1. **Root Cause**: Focus more on user problems rather than system issues
+2. **Branch Problem**: Add specific details about the sub-problem
+3. **Hypothesis**: Strengthen the reasoning with more evidence
+
+## Strengths
+1. Strong solution implementation details
+2. Clear success criteria and data requirements
+3. Well-defined audience and variants
+
+## Areas for Improvement
+1. Problem definition needs more user focus
+2. Root cause analysis lacks behavioral specificity
+3. Duration rationale missing
+```
+
+## Scoring Icons
+- ✅ Full points earned (80-100% of section max)
+- ⚠️ Partial points (40-79% of section max)  
+- ❌ Low/no points (<40% of section max)

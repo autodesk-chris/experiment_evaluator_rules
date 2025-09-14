@@ -1,0 +1,97 @@
+---
+description: Solution Space evaluation criteria (sections 7-16, 28 points total)
+alwaysApply: false
+---
+
+# Solution Space Sections (28 points total)
+
+## 7. Prediction (10 points)
+**AI Evaluation** - Score across 4 criteria:
+
+**Format (2 points)**:
+- **2 points**: Uses explicit "If... then..." phrasing with clear condition and expected outcome
+- **1 point**: States a conditional relationship but phrasing is unclear or incomplete
+- **0 points**: No conditional structure; written as a statement of fact or vague expectation
+
+**Hypothesis Alignment (3 points)**:
+- **3 points**: Clearly connects the solution to the hypothesis, making it possible to validate or invalidate the belief
+- **2 points**: References the hypothesis indirectly or weakly, but still provides some connection
+- **1 point**: States a solution without any clear relation to the hypothesis
+- **0 points**: No alignment with the hypothesis is evident
+
+**Testability (3 points)**:
+- **3 points**: Outcome is stated in a way that is observable and falsifiable, even without metrics defined yet
+- **2 points**: Outcome is generally testable but contains ambiguous or subjective elements
+- **1 point**: Outcome is difficult to observe or prove false in practice
+- **0 points**: Outcome cannot be validated or falsified in any way
+
+**Flexibility (2 points)**:
+- **2 points**: Framed at the outcome level, so multiple solution variations could test it
+- **1 point**: Tied to a single implementation of the solution
+- **0 points**: Locked to a feature specification, preventing broader testing
+
+**Operational Rules:**
+- Deduct points for:
+  - Predictions stated as certainties rather than conditional outcomes
+  - Vague or untestable statements
+  - Predictions not aligned with the hypothesis
+  - Overly prescriptive predictions tied to one solution
+- Apply these tests:
+  1. Is it written as "If... then..."?
+  2. Does it align with the hypothesis by testing its truth?
+  3. Can it be observed and proven false?
+  4. Could different solution variations be used to test it?
+
+## 8. Learning Objective (2 points)
+**AI Evaluation**:
+- **2 points**: Clear, concise, learning-focused; includes BOTH what we want to learn AND expected user behavior/outcome
+- **1 point**: Generally clear BUT vague on behavior or lacks precision
+- **0 points**: Ambiguous, missing, or framed as solution rather than learning objective
+
+## 9. Test Variant Description (2 points)
+**AI Evaluation**:
+- **2 points**: Clear explanation of variant experience, how it differs from control, CTA visibility, user interaction expectations
+- **1 point**: Some clarity but missing implementation details or hard to distinguish from control
+- **0 points**: Vague, confusing, or not clearly different from control
+
+## 10. Control Variant Description (2 points)
+**AI Evaluation**:
+- **2 points**: Clear reference to existing user flow, sufficient detail for understanding, true baseline
+- **1 point**: Mostly clear but lacks detail or somewhat vague about baseline
+- **0 points**: Unclear, not true baseline, or overlaps with test variant
+
+## 11. Audience (2 points)
+**AI Evaluation**:
+- **2 points**: Specific targeting criteria, clear split methodology, appropriate randomization
+- **1 point**: Reasonable definition but vague on timing or assignment method
+- **0 points**: Missing, poorly defined, or likely to introduce bias
+
+## 12. Duration (2 points)
+**AI Evaluation**:
+- **2 points**: Clearly stated duration with rationale (user volume, statistical power, traffic assumptions)
+- **1 point**: Duration stated but no rationale OR weak rationale
+- **0 points**: Missing, vague ("a few weeks"), or lacks justification
+
+## 13. Success Criteria (2 points)
+**AI Evaluation**:
+- **2 points**: Quantitative thresholds, statistical significance criteria, aligns with learning objective
+- **1 point**: Some specificity but missing elements or unclear measurement logic
+- **0 points**: No clear threshold, ambiguous criteria, or missing entirely
+
+## 14. Data Requirements (2 points)
+**AI Evaluation**:
+- **2 points**: Metrics clearly listed, align with success criteria, clear data collection method
+- **1 point**: Some metrics listed but unclear alignment or vague collection method
+- **0 points**: Metrics missing/unclear, no explanation of data collection
+
+## 15. Considerations (2 points)
+**AI Evaluation**:
+- **2 points**: Outlines considerations, risks, questions, or investigation areas
+- **1 point**: Some content but lacks clarity on what needs exploration
+- **0 points**: No content or completely irrelevant
+
+## 16. What Next (2 points)
+**AI Evaluation**:
+- **2 points**: Clear actions for BOTH success AND failure scenarios
+- **1 point**: Only one outcome defined OR both mentioned but lack clarity
+- **0 points**: No clear next steps or missing content
