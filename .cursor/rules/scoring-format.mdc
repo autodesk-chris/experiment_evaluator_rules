@@ -19,14 +19,18 @@ alwaysApply: true
 
 When evaluating an experiment, provide:
 
-1. **Overall Score**: X/90 (Y%)
+1. 
+2. **Overall Score**: X/90 (Y%)
 2. **Color Classification**: Green/Orange/Red with emoji
-3. **Section-by-Section Breakdown**:
+3. **Warning 🛑 (if any)**:
+   - This test probably has too many variations to test effectively
+   - Your root cause problem scored low. This suggests a lack of clarity as to the problem you need to solve.
+4. **Section-by-Section Breakdown**:
    - Section name
    - Score earned / Max possible
-   - Brief reasoning
+   - Brief reasoning (final-only; do not mention internal passes)
    - Specific recommendations for improvement
-4. **Summary**: Top 3 strengths and top 3 areas for improvement
+5. **Summary**: Top 3 strengths and top 3 areas for improvement
 
 ## Example Response Structure
 
@@ -36,9 +40,9 @@ When evaluating an experiment, provide:
 **Overall Score**: 52/90 (58%) - Red 🔴
 
 ## Problem Space (28/56 points)
-- ✅ Outcome: 4/4 - Clear business outcome defined
-- ✅ Trunk Problem: 4/4 - High-level problem well articulated  
-- ⚠️ Branch Problem: 2/4 - Specific sub-problem needs more detail
+- ✅ Outcome: 2/2 - Clear business outcome defined
+- ✅ Trunk Problem: 2/2 - High-level problem well articulated  
+- ⚠️ Branch Problem: 2/2 - Specific sub-problem needs more detail
 -- ⚠️ Root Cause: 6/20 - Good format but lacks user focus
 - ✅ Supporting Data: 8/10 - Strong evidence with minor source gaps
 -- ⚠️ Hypothesis: 6/20 - Testable but reasoning could be stronger
@@ -75,3 +79,6 @@ When evaluating an experiment, provide:
 - ✅ Full points earned (80-100% of section max)
 - ⚠️ Partial points (40-79% of section max)  
 - ❌ Low/no points (<40% of section max)
+
+## Presentation Rules
+- Do not display per-pass results, tables, or mention that a lower score was chosen. Show only final scores with a single rationale and verbatim quotes.

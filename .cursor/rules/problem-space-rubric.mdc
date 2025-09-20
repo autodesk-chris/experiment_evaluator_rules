@@ -5,6 +5,21 @@ alwaysApply: true
 
 # Problem Space Sections (56 points total)
 
+## Scope Enforcement (Problem Space)
+- Evaluate each section from its own parsed content only.
+- Cross-section use is only allowed where explicitly stated below and must be quoted and labeled.
+- Two-pass scoring is internal; only final scores, a single rationale, and quotes are reported.
+
+## Allowed Dependencies Map (Problem Space)
+- Outcome: none
+- Trunk Problem: none
+- Branch Problem: none
+- Root Cause: none
+- Supporting Data: none
+- Hypothesis:
+  - Root cause alignment (sub-criterion): allowed dependency = Root Cause
+  - Reflects supporting data (sub-criterion): allowed dependency = Supporting Data
+
 ## 1. Outcome (2 points)
 **Binary Check**: Was there content provided
 - ✅ **2 points**: Content exists 
@@ -25,7 +40,7 @@ alwaysApply: true
 
 **Length (2 points)**:
 - **2 points**: Statement is concise (1-2 sentences)
-- **0 points**: Ttoo long (3+ sentences)
+- **0 points**: Too long (3+ sentences)
 
 **Format (2 points)**:
 - **2 points**: Uses "[trunk problem] because [reason]" causal structure
@@ -53,6 +68,12 @@ alwaysApply: true
   3. Can it be solved in multiple ways? If yes → problem space
   4. Can it be backed by data or feedback? If no → too vague
 - Include specific recommendations for improvements based on the scoring
+
+Additional enforcement (machine-checkable):
+- Length (2): Count sentences; if >2, assign 0.
+- Format (2): Must use "[trunk problem] because [reason]"; else 0.
+- Focus (8): If solution words/feature names/workflows (e.g., "CTA", "Board", "Site Design") appear, step down at least one band.
+- Clarity (8): Require both (a) observable behavior and (b) multiple plausible solutions; if either is missing in the parsed text, step down one band.
 
 ## 5. Supporting Data (10 points)
 **AI Evaluation** - Score across 4 criteria:
@@ -107,3 +128,7 @@ alwaysApply: true
   2. Is it written as a belief, not a solution/goal?
   3. Does it connect to the root cause?
   4. Is it logically supported by evidence, without needed tio state specific data points.
+
+Dependency rules (Hypothesis only):
+- Root cause alignment (2): allowed dependency = Root Cause; quotes required from Hypothesis and Root Cause. If Root Cause lacks needed content → score 0 here.
+- Reflects supporting data (8): allowed dependency = Supporting Data; quotes required from Hypothesis and Supporting Data. If Supporting Data lacks needed content → score lowest band here.

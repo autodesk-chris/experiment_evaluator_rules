@@ -15,10 +15,37 @@ Experiments should be evaluated across two main areas:
 
 **Total possible score**: 90 points (converted to percentage)
 
+## Scope and Dependencies
+
+- Section Scope Lock (default):
+  Evaluate each section strictly from its parsed content (`parsed_section_text`). Do not use content from other sections.
+
+- Explicit Cross-Section Exceptions:
+  Only if a rubric sub-criterion declares an external dependency may you use `parsed_section_text` from the named section(s). For every cross-section use, cite verbatim quotes and label them with their source section.
+
+- Allowed Dependencies Registry:
+  Dependencies are declared in the rubrics at both the section and sub-criterion level. If not listed, cross-section use is disallowed.
+
+- Missing/Conflicting Dependency Handling:
+  If a required dependent section is empty or missing the needed element, score the dependent sub-criterion as missing (0 for binary; lowest band otherwise).
+  If content conflicts across sections, assign the lower score and explain the conflict.
+
+- Evidence Quoting Rule:
+  Every scored sub-criterion must include at least one verbatim quote from an allowed source (the current section or a whitelisted dependency), clearly labeled with its section name.
+
+- Binary Enforcement:
+  Binary checks are 0 or max based solely on allowed sources; no partial credit.
+
+## Two-Pass Scoring Protocol (internal)
+
+- Repeat the exact same evaluation pipeline twice per section (same rubric, same scope/dependency rules).
+- Final sub-criterion score = the lower of the two pass scores. Final section score = sum of sub-criterion finals.
+- Output only shows final scores with a single rationale and quotes. Do not mention the two-pass process in user-facing output.
+
 ## Evaluation Process
 
 When the user provides an experiment:
-1) Parse it into these required sections:
+1) Parse it into these required sections and metadata:
 
    Problem Space (56 points):
    - Section 1: Outcome
@@ -39,6 +66,9 @@ When the user provides an experiment:
    - Section 14: Data Requirements
    - Section 15: Considerations
    - Section 16: What Next
+
+   Metadata (non-scoring):
+   - Test type (from Solution Space) — used only for heuristic warnings
 
 2) Use @problem-space-rubric for sections 1-6 (56 points)
 3) Use @solution-space-rubric for sections 7-16 (34 points)
@@ -68,3 +98,33 @@ Remember: Always be specific, actionable, and constructive in your feedback.
 
 Runtime enforcement:
 - Before every evaluation, ensure the three rules above are active (alwaysApply: true). If any are missing or disabled, load them explicitly and validate section maxima (56 + 34 = 90) prior to scoring.
+
+## Validation Rules
+- Reject any rationale that cites text not found in allowed sources for that sub-criterion.
+- Binary sections: enforce {0, max} in both passes; final is min.
+- Confirm section totals match rubric maxima (Problem Space 56; Solution Space 34; Total 90).
+
+## Heuristic Warnings (non-scoring)
+
+- Purpose:
+  Emit non-scoring warnings based on simple heuristics. These warnings do not affect scores and must not circumvent section scope rules for scoring.
+
+- Multi-variant test warning (uses Solution Space "Test type" only):
+  - Source: The parsed `Test type` field in Solution Space. Do not scan other sections for this warning.
+  - Trigger (case-insensitive):
+    - Regex patterns indicating more than two arms (excluding control), e.g.:
+      - `\bA/B/C(?![^A-Z/])` or `\bA\s*/\s*B\s*/\s*C\b`
+      - `\bA/B/C/D\b` or `\bA\s*/\s*B\s*/\s*C\s*/\s*D\b`
+      - `\bmultivariate\b|\bmulti[- ]arm\b|\bfactorial\b`
+      - Phrases like `A/B/C vs Control`, `A/B/C/D vs Control`
+    - Normalized count: Extract distinct non-control arms from `Test type`; if count > 2, trigger.
+  - Emitted text:
+    - This test probably has too many variations to test effectively
+  - Missing field behavior: If `Test type` is absent, do not emit this warning.
+
+## Scoring-Triggered Warnings (non-scoring)
+
+- Root cause quality warning:
+  - Trigger: After scoring Section 4 (Root Cause), if the final section score is < 16/20.
+  - Emitted text:
+    - Your root cause problem scored low. This suggests a lack of clarity as to the problem you need to solve.

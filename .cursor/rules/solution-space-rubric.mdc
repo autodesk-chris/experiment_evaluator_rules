@@ -5,6 +5,31 @@ alwaysApply: true
 
 # Solution Space Sections (34 points total)
 
+## Scope Enforcement (Solution Space)
+- Evaluate each section from its own parsed content only.
+- Cross-section use is only allowed where explicitly stated below and must be quoted and labeled.
+- Two-pass scoring is internal; only final scores, a single rationale, and quotes are reported.
+
+## Allowed Dependencies Map (Solution Space)
+- Prediction:
+  - Hypothesis alignment (sub-criterion): allowed dependency = Hypothesis
+- Learning Objective: none
+- Test Variant Description: none
+- Control Variant Description: none
+- Audience: none
+- Duration: none
+- Success Criteria:
+  - Alignment to learning objective (band logic): allowed dependency = Learning Objective
+- Data Requirements:
+  - Metric alignment (2): allowed dependency = Success Criteria
+- Considerations: none
+- What Next:
+  - Optional reference to Success Criteria (clarity of success/failure branching)
+
+## Metadata (non-scoring)
+- Test type: Required for warnings only. If `Test type` indicates more than two arms (excluding control), the evaluator emits this warning (no scoring impact):
+  - This test probably has too many variations to test effectively
+
 ## 7. Prediction (10 points)
 **AI Evaluation** - Score across 4 criteria:
 
@@ -127,11 +152,18 @@ alwaysApply: true
    - Replace vague terms with measurable benchmarks
 6) If no quantitative values are provided for the metrics, cap the maximum score for Success Criteria at 2 points.
 
+Enforcement notes:
+- Full credit requires an explicit statistical standard (e.g., p<0.05) OR a quantitative threshold (>10% lift), AND a measurement window for each metric where applicable.
+- Keep metrics focused (≤4), distinguish primary vs secondary, and include measurement periods to reach the top band.
+
 ## 14. Data Requirements (2 points)
 **AI Evaluation**:
 - **2 points**: Metrics clearly listed, align with success criteria, clear data collection method
 - **1 point**: Some metrics listed but unclear alignment or vague collection method
 - **0 points**: Metrics missing/unclear, no explanation of data collection
+
+Dependency rule:
+- Allowed dependency = Success Criteria (metric alignment only). Evidence must quote metrics here and the matching metrics in Success Criteria. If Success Criteria lacks metrics → score alignment as missing.
 
 ## 15. Considerations (2 points)
 **AI Evaluation**:
