@@ -4,10 +4,32 @@ Transform your experiment evaluation process using Cursor's AI-powered rules eng
 
 ## 🚀 Quick Start
 
-### 1. Open This Workspace in Cursor
-- Clone or download this repository
-- Open the folder in Cursor
-- The `.cursor/rules/` files will be automatically detected
+### 1. Open This Workspace in Cursor (beginner-friendly)
+
+Option A — Download as ZIP (no Git needed)
+1) Go to the repository on GitHub and click the green "Code" button
+2) Click "Download ZIP"
+3) Open your Downloads folder and unzip the file
+   - macOS: double‑click the `.zip`
+   - Windows: right‑click → "Extract All…"
+4) You now have a normal folder with the project files
+
+Option B — Clone with Git (command line)
+1) Install Git if needed: https://git-scm.com/downloads
+2) On GitHub, click "Code" and copy the HTTPS URL
+3) Open Terminal (macOS) or Command Prompt/PowerShell (Windows)
+4) Choose a location and run:
+   ```bash
+   cd ~/Documents
+   git clone <paste-the-repo-URL-here>
+   ```
+5) A new project folder will appear with the files
+
+Open the folder in Cursor
+1) Open Cursor
+2) File → Open Folder (or drag the folder onto Cursor)
+3) Select the project folder you downloaded/cloned
+4) Cursor will automatically detect the rules inside the `.cursor/rules/` folder — no extra setup needed
 
 ### 2. Upload Your Experiment
 - Copy your experiment content (TXT, DOCX, or plain text)
