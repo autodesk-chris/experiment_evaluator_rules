@@ -62,6 +62,21 @@ The Cursor Rules system uses AI to:
 - Binary checks (Outcome, Trunk Problem, Branch Problem): 0 or full points only
 - Success Criteria: graded on an 8-point rubric; if no quantitative values are provided for metrics, the maximum score is capped at 2/8
 
+### Evaluation rules and constraints
+- Section scope lock: Each section is scored strictly from its own content. Cross-section references are only allowed where explicitly stated in the rules.
+- Allowed dependencies (summary):
+  - Hypothesis ↔ Root Cause (alignment) and ↔ Supporting Data (consistency)
+  - Prediction ↔ Hypothesis (alignment)
+  - Success Criteria ↔ Learning Objective (alignment)
+  - Data Requirements ↔ Success Criteria (metric alignment)
+  - What Next may optionally reference Success Criteria for clarity
+- Evidence quoting: Every scored sub-criterion includes at least one verbatim quote from an allowed source, labeled with the section name.
+- Binary enforcement: Binary sections use {0, max} only; no partial credit.
+- Heuristic warnings (non-scoring):
+  - Multi-variant test: Triggered when Test type indicates more than two arms (e.g., “A/B/C vs Control”, “A/B/C/D”). Emitted text: "This test probably has too many variations to test effectively".
+  - Root cause quality: Emitted if Root Cause scores < 16/20. Text: "Your root cause problem scored low. This suggests a lack of clarity as to the problem you need to solve."
+- Response format (high level): Overall Score, Color Classification, Warning(s) if any, Section-by-section breakdown (score, rationale, quotes, recommendations), and a brief strengths/areas-for-improvement summary.
+
 ### Tips
 - When asking the AI to evaluate, include the phrase: "Use the workspace evaluation rules"
 - Keep your brief structured by the 16 sections for best results
